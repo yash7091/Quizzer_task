@@ -9,6 +9,7 @@
   
 body{
     background-color: #192b41;
+    padding-right:20px ;
 }
   .right{
       float: right;
@@ -17,16 +18,27 @@ body{
   }
 .body{
     float: left;
-    padding-top: 100px ;
+    padding-top: 50px ;
     padding-left:80px ;
-    width: 50%;
+    width: 60%;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly !important;
 }
 .body p{
     color: #8494a4;
+    padding-top: 15px;
+    font-size: 13px;
 }
 .body img{
+    align-items:flex-start !important;
     height: 200px;
+    width: 400px;
+    float: left !important;
+    padding-bottom:20px ;
+ 
+ 
 }
   
   
@@ -35,10 +47,11 @@ body{
     height: 100%;
     padding: 30px;
     border-right:20px ;
+    
 
   }
   .dummy{
-      text-align: center;
+     float:right;
       border-left: -20px;
       color: #babcbe;
       font-size: 12px;
@@ -57,17 +70,20 @@ body{
  
   .wrapper  img{
     display: block;
-    width: 220px;
-    margin: 25px auto 0;
+    width: 340px;
+    height: 370px;
+    border-bottom: 10px;
+
   }
   
   .wrapper .right{
     background: #fff;
     height: 80vh;
     border-radius:8px;
-    margin-right:40px ;
   }
-  
+  .body h2{
+      border-top:10px ;
+  }
   .wrapper .right .tabs ul{
     text-align: center;
   }
@@ -116,11 +132,12 @@ body{
     letter-spacing: 3px;
     font-weight: bold;
     border-radius: 8px;
-    border: 20px;
+  
     width: 40%;
     margin-top: 120px;
-    margin-left:110px ;
+    align-items: center;
     margin-bottom: -50px;
+    z-index: 10;
     
 }
   
@@ -128,4 +145,36 @@ body{
     color: #fff;
     display: block;
     font-size: 14px;
+  }
+  @media screen and (max-width: 900px){
+      .wrapper{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-left: -20px;
+      }
+      .body{
+          border-left: 10% !important;
+      }
+      .right{
+           padding: 50%;
+           border-right: -40px;
+           width: 80% !important;
+      }
+      .wrapper .right .btn{
+        border-top: -180px;
+
+    }
+    .login  .btn{
+        margin-bottom: 70px !important;
+        margin-top: -30px !important;
+    }
+    .login{
+        border-bottom: -20px !important;
+    }
+    .register .btn{
+        margin-bottom: 70px !important;
+        margin-top: -30px !important;
+    }
   }
